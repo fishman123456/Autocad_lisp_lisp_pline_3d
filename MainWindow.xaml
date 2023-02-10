@@ -1,0 +1,26 @@
+﻿<Window x:Class="Autocad_lisp_lisp_pline_3d.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autocad_lisp_lisp_pline_3d"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="text_1" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Cursor="Arrow" FontSize="20" Background="#FFE3E4E3" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AcceptsReturn="True"/>
+        <TextBox x:Name="text_2" Grid.Column="2" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" FontSize="20" Background="#FFE3E4E3" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AcceptsReturn="True"/>
+        <Button x:Name="butt_1" Grid.Row="1" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Width="100" Height="48" Content="обновить"/>
+        <Button x:Name="butt_2" Grid.Column="2" Content="сохранить" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Width="100" Height="50"/>
+
+
+    </Grid>
+</Window>
