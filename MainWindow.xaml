@@ -9,17 +9,20 @@
     <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>
-            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="200*"/>
             <ColumnDefinition Width="200*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
             <RowDefinition Height="150*"/>
-            <RowDefinition Height="67*"/>
+            <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="text_1" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" Cursor="Arrow" FontSize="20" Background="#FFE3E4E3" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AcceptsReturn="True"/>
-        <TextBox x:Name="text_2" Grid.Column="2" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" FontSize="20" Background="#FFE3E4E3" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" AcceptsReturn="True"/>
-        <Button x:Name="butt_1" Grid.Row="1" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Width="100" Height="48" Content="обновить"/>
-        <Button x:Name="butt_2" Grid.Column="2" Content="сохранить" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Width="100" Height="50"/>
+        <TextBox Name="t_0"  Grid.Row="1"   AutomationProperties.HelpText="введите координаты"  Margin="10" FontSize="20" TextWrapping="Wrap" ForceCursor="True" AcceptsReturn="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Visible"/>
+
+        <Button x:Name="butt_0_0" Grid.Row="0" Grid.Column="0" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
+        <Button x:Name="butt_2_0" Grid.Row="2" Grid.Column="0" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
+        <Button x:Name="butt_2_1" Grid.Row="2" Grid.Column="1"  BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
+        <Button x:Name="butt_2_2" Grid.Row="2" Grid.Column="2" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
 
 
     </Grid>
