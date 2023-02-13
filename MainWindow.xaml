@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Autocad_lisp_lisp_pline_3d"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="600" MinWidth="600" MinHeight="400" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200*"/>
@@ -16,14 +16,18 @@
             <RowDefinition Height="50*"/>
             <RowDefinition Height="150*"/>
             <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
-        <TextBox Name="t_0"  Grid.Row="1"   AutomationProperties.HelpText="введите координаты"  Margin="10" FontSize="20" TextWrapping="Wrap" ForceCursor="True" AcceptsReturn="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Visible"/>
-
-        <Button x:Name="butt_0_0" Grid.Row="0" Grid.Column="0" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
-        <Button x:Name="butt_2_0" Grid.Row="2" Grid.Column="0" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
-        <Button x:Name="butt_2_1" Grid.Row="2" Grid.Column="1"  BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
-        <Button x:Name="butt_2_2" Grid.Row="2" Grid.Column="2" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="обновить" Margin="10"/>
-
+        <TextBox Name="t_0"  Grid.Row="1" Grid.Column="0"  AutomationProperties.HelpText="введите координаты"  Margin="10" FontSize="20" TextWrapping="Wrap" ForceCursor="True" AcceptsReturn="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Visible" TextChanged="t_0_TextChanged"/>
+        <TextBox Name="t_1"  Grid.Row="1" Grid.Column="1"  AutomationProperties.HelpText="введите координаты"  Margin="10" FontSize="20" TextWrapping="Wrap" ForceCursor="True" AcceptsReturn="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Visible" TextChanged="t_1_TextChanged"/>
+        <TextBox Name="t_2"  Grid.Row="1" Grid.Column="2"  AutomationProperties.HelpText="введите координаты"  Margin="10" FontSize="20" TextWrapping="Wrap" ForceCursor="True" AcceptsReturn="True" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Visible" TextChanged="t_2_TextChanged"/>
+        <Button x:Name="butt_0_0" Grid.Row="0" Grid.Column="0" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="резерв" Margin="10"/>
+        <Button x:Name="butt_0_1" Grid.Row="0" Grid.Column="1" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="открыть файл" Margin="10"/>
+        <Button x:Name="butt_0_2" Grid.Row="0" Grid.Column="2" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="сохранить в файл" Margin="10" Click="butt_0_2_Click"/>
+        <Button x:Name="butt_2_0" Grid.Row="2" Grid.Column="0" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="очистить начало" Margin="10" Click="butt_2_0_Click"/>
+        <Button x:Name="butt_2_1" Grid.Row="2" Grid.Column="1"  BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="очистить" Margin="10" Click="butt_2_1_Click"/>
+        <Button x:Name="butt_2_2" Grid.Row="2" Grid.Column="2" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="очистить конец" Margin="10" Click="butt_2_2_Click"/>
+        <Button x:Name="butt_3" Grid.Row="3" Grid.ColumnSpan="3" BorderBrush="#FF65D44F" Cursor="Hand" FontSize="20" Content="очистить все" Margin="10" Click="butt_3_Click" />
 
     </Grid>
 </Window>
