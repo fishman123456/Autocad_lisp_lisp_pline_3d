@@ -59,5 +59,10 @@ namespace Autocad_lisp_lisp_pline_3d
             t_1.Text = string.Empty;
             t_2.Text = string.Empty;
         }
+
+        private void butt_0_2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
